@@ -1,0 +1,372 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f8fb;
+    color: #222;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 58px;
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* MENU ICON */
+.menu-icon {
+    position: absolute;
+    left: 14.5%;
+    top: 17px;
+    cursor: pointer;
+    width: 35px;
+}
+
+.menu-icon span {
+    display: block;
+    width: 34px;
+    height: 3px;
+    background: #393078;
+    margin-bottom: 7px;
+    border-radius: 5px;
+}
+
+/* LOGO */
+.logo {
+    text-align: center;
+    line-height: 1;
+}
+
+.logo-main {
+    font-size: 39px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.logo-symbol {
+    color: #f58220;
+    font-style: italic;
+}
+
+.logo-sub {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #f58220;
+    text-align: right;
+}
+
+/* ENQUIRY RIBBON */
+.enquiry-ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 110px;
+    height: 110px;
+    background: #30343b;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    z-index: 10;
+    text-decoration: none;
+}
+
+.enquiry-ribbon span {
+    position: absolute;
+    top: 16px;
+    right: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transform: rotate(45deg);
+}
+
+/* PAGE BANNER */
+.page-banner {
+    height: 158px;
+    background:
+        linear-gradient(
+            105deg,
+            #ff6837 0%,
+            #ff9b83 30%,
+            #f4f7fc 65%,
+            #e9f4ff 100%
+        );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.page-banner h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: #555;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #333;
+}
+
+.separator {
+    width: 16px;
+    height: 5px;
+    background: #ff6828;
+    border-radius: 10px;
+}
+
+/* MAIN SECTION */
+.verification-section {
+    min-height: 342px;
+    padding: 55px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* CARD */
+.verification-card {
+    width: 100%;
+    max-width: 662px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px 34px 45px;
+    text-align: center;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.09);
+}
+
+.verification-card h2 {
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.verification-card h2 span {
+    color: #f36b2b;
+}
+
+.subtitle {
+    font-size: 17px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* INPUT + BUTTON */
+.input-group {
+    display: flex;
+    width: 100%;
+    height: 62px;
+    border: 1px solid #e5e5e5;
+    border-radius: 50px;
+    overflow: hidden;
+    background: white;
+}
+
+.input-group input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    padding: 0 17px;
+    font-size: 18px;
+    color: #333;
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+/* VERIFY BUTTON */
+.verify-btn {
+    width: 130px;
+    border: none;
+    background: #ff681c;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    transition: 0.3s;
+}
+
+.verify-btn:hover {
+    background: #e95510;
+}
+
+/* SEARCH ICON */
+.search-icon {
+    width: 17px;
+    height: 17px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.search-icon::after {
+    content: "";
+    width: 7px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    right: -5px;
+    bottom: -3px;
+    transform: rotate(45deg);
+    border-radius: 2px;
+}
+
+/* RESULT */
+#result {
+    margin-top: 20px;
+}
+
+.result-box {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.success {
+    background: #eaf8ef;
+    border: 1px solid #b6e4c6;
+    color: #176534;
+}
+
+.error {
+    background: #fff0f0;
+    border: 1px solid #ffc7c7;
+    color: #b42323;
+}
+
+.result-box h3 {
+    margin-bottom: 10px;
+}
+
+.result-box p {
+    margin: 7px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .menu-icon {
+        left: 20px;
+    }
+
+    .logo-main {
+        font-size: 29px;
+    }
+
+    .logo-sub {
+        font-size: 8px;
+    }
+
+    .page-banner h1 {
+        font-size: 24px;
+    }
+
+    .verification-section {
+        padding: 35px 15px;
+    }
+
+    .verification-card {
+        padding: 30px 20px;
+    }
+
+    .verification-card h2 {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    .input-group {
+        height: 55px;
+    }
+
+    .input-group input {
+        font-size: 15px;
+        padding: 0 12px;
+    }
+
+    .verify-btn {
+        width: 105px;
+        font-size: 16px;
+    }
+
+    .enquiry-ribbon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .enquiry-ribbon span {
+        font-size: 11px;
+        top: 12px;
+        right: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .input-group input {
+        font-size: 13px;
+    }
+
+    .verify-btn {
+        width: 90px;
+    }
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items :start;
+    justify-content:left;
+    height: 58px;
+}
+
+.logo img {
+    width: 240px;
+    height: 48px;
+    object-fit: contain;
+    display: block;
+}
+
+/* RESPONSIVE LOGO */
+@media (max-width: 768px) {
+    .logo img {
+        width: 190px;
+        height: 42px;
+    }
+}

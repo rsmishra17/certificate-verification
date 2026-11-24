@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Certificate - TECHPILE</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="menu-icon" id="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="logo">
+            
+             <img src="logo jpeg.jpeg" alt="">
+            
+        </div>
+    </nav>
+
+    <!-- Enquiry Ribbon -->
+    <a href="#" class="enquiry-ribbon">
+        <span>ENQUIRY</span>
+    </a>
+
+    <!-- Header Banner -->
+    <section class="page-banner">
+        <h1>Verify Certificate</h1>
+
+        <div class="breadcrumb">
+            <a href="#">Home</a>
+            <span class="separator"></span>
+            <span>Verify Certificate</span>
+        </div>
+    </section>
+
+    <!-- Verification Section -->
+    <main class="verification-section">
+
+        <div class="verification-card">
+
+            <h2>Verify <span>Certificate</span></h2>
+
+            <p class="subtitle">
+                Enter your enrollment ID to verify your certificate.
+            </p>
+
+            <form id="verifyForm">
+                <div class="input-group">
+
+                    <input
+                        type="text"
+                        id="enrollmentId"
+                        placeholder="Enter your Enrollment ID"
+                        required
+                    >
+
+                    <button type="submit" class="verify-btn">
+                        <span class="search-icon"></span>
+                        Verify
+                    </button>
+
+                </div>
+            </form>
+
+            <!-- Result -->
+            <div id="result"></div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
